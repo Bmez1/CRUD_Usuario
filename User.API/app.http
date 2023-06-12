@@ -1,0 +1,36 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@rootURL = https://localhost:7263/api/user
+
+GET {{rootURL}}
+
+###
+
+GET {{rootURL}}/daniel@mail.com
+
+###
+
+POST {{rootURL}}
+Content-Type application/json
+
+{
+  "title": "Registro número tres",
+  "firtsName": "Nnumero 3",
+  "lastName": "registro 3",
+  "email": "user@example.com",
+  "role": 0,
+  "password": "string_13"
+}
+
+###
+
+PUT {{rootURL}}/4
+Content-Type application/json
+
+{
+  "title": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "user@example.com",
+  "role": 0
+}

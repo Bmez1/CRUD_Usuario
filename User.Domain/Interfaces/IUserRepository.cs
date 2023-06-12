@@ -7,7 +7,8 @@ namespace User.Domain.Interfaces
     {
         Task<IEnumerable<UserDataDto>> GetUsersAsync();
         Task<UserDataDto> GetUserByEmailAsync(string email);
-        Task CreateUser(UserCreateInputDto user);
-        Task UpdateUser(UserCreateInputDto user);
+        Task<UserDataDto> GetUserByIdAsync(int userId);
+        Task<string> CreateUser(UserCreateInputDto user);
+        Task<string> UpdateUser(UserUpdateInputDto user, int userId);
     }
 }

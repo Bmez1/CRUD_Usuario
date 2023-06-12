@@ -3,7 +3,7 @@ using User.Domain.Enums;
 
 namespace User.Domain.Dtos.Inputs
 {
-    public class UserCreateInputDto
+    public class UserUpdateInputDto
     {
         public string? Title { get; set; }
 
@@ -17,8 +17,5 @@ namespace User.Domain.Dtos.Inputs
 
         [Required(ErrorMessage = "El campo {0} es obligatorio")]
         public Role Role { get; set; }
-
-        [Required(ErrorMessage = "El campo {0} es obligatorio")]
-        public string Password { get; set; }
     }
 }
